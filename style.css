@@ -1,8 +1,8 @@
 /* Design tokens */
 :root {
-  --paper: hsla(251, 28%, 88%, 0.99);
-  --ink: hsla(244, 16%, 17%, 0.95);
-  --brand: hsla(0, 79%, 63%, 0.9);
+  --text-color: #101c20;
+  --link-color: hsla(244, 16%, 17%, 0.95);
+  --background-color: white;
 }
 /* General Styles */
 * {
