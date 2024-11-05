@@ -64,6 +64,7 @@ nav .right a span {
   margin: 50px 0;
   align-items: center;
   gap: 50px;
+  margin-bottom: 100px;
 }
 
 .hero-section .text {
@@ -71,7 +72,15 @@ nav .right a span {
 }
 
 .hero-section .headshot {
+  width: 100%;
   flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.hero-section .headshot img {
+  max-width: 100%;
+  border-radius: 50%;
 }
 
 .hero-section .text h2 {
@@ -97,10 +106,22 @@ nav .right a span {
     border: 2px solid var(--text-color);
 }
 
-img {
-  max-width: 100%;
+@media (max-width: 800px){
+  /* Hero-Section */
+  .hero-section .text h2{
+    font-size: 35px;
+  }
 }
 
+@media (max-width:700px){
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section .headshot {
+    max-width: 50%;
+  }
+}
 
 @media (max-width: 650px){
   /* NavBar */
@@ -124,6 +145,15 @@ img {
 
   img {
     max-width: 100%;
+  }
+
+  /* Hero-Section */
+  .hero-section {
+     padding: 0 20px;
+  }
+
+  .hero-section .text h2 {
+    font-size: 30px;
   }
 
 }
