@@ -96,8 +96,7 @@ nav .right a span {
   padding: 5px 10px;
   border: 2px solid var(--link-color);
   border-radius: 5px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
   transition: .1s;
 }
 
@@ -108,6 +107,7 @@ nav .right a span {
 
 .proj-section {
   padding: 0 50px;
+  margin-top: -25px;
   margin-bottom: 100px;
 }
 
@@ -127,7 +127,6 @@ nav .right a span {
 .cards {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -183,11 +182,13 @@ nav .right a span {
   color: var(--text-color);
 }
 
+
 @media (max-width: 800px){
   /* Hero-Section */
   .hero-section .text h2{
     font-size: 35px;
   }
+  
 }
 
 @media (max-width:700px){
@@ -197,6 +198,25 @@ nav .right a span {
 
   .hero-section .headshot {
     max-width: 50%;
+  }
+  
+  .cards {
+    max-width: 900px;
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: lightgray;
+    box-shadow: 0 2px 4px black;
+    overflow: hidden;
+    padding: 3px;
+   
   }
 
 }
