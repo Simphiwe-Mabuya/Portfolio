@@ -120,10 +120,6 @@ nav .right a span {
   margin-bottom: 20px;
 }
 
-.lang {
-  font-weight: 700;
-}
-
 .cards {
   display: flex;
   justify-content: center;
@@ -151,6 +147,10 @@ nav .right a span {
   object-fit: cover;
   border-radius: 5px;
 
+}
+
+.card-content p span {
+  font-weight: 700;
 }
 
 .card-content h3 {
