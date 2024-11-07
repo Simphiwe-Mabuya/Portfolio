@@ -183,6 +183,56 @@ nav .right a span {
   color: var(--text-color);
 }
 
+/* Contact-Section */
+
+.contact-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.contact-section .group {
+  display: flex;
+  gap: 50px;
+
+}
+
+.contact-section .group .text {
+  flex: 2;
+  margin-top: 20px;
+}
+
+.contact-section .group form {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+.contact-section .group form input,
+.contact-section .group form textarea {
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid var(--link-color);
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: none;
+}
+
+.contact-section .group form button {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: var(--link-color);
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  transition: .1s ease;
+}
+
+.contact-section .group form button:hover {
+  filter: brightness(.9);
+}
+
 
 @media (max-width: 800px){
   /* Hero-Section */
@@ -221,6 +271,12 @@ nav .right a span {
    
   }
 
+  /* Contact-Section */
+  .contact-section .group {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 @media (max-width: 650px){
@@ -254,6 +310,12 @@ nav .right a span {
 
   .hero-section .text h2 {
     font-size: 30px;
+  }
+
+  /* Contact-Section */
+  .contact-section {
+    padding: 0 20px;
+    margin-left: 30px;
   }
 
 }
